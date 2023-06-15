@@ -1,0 +1,233 @@
+/* ----- ESTILOS BASE ----- */
+
+/*  Importación de fuentes desde Google Fonts  */
+
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,700&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Mukta&family=Nunito:ital,wght@0,300;1,700&display=swap');
+
+
+
+
+/*
+font-family: 'Gluten', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Mukta', sans-serif;
+*/
+
+
+
+:root {
+  /* con este :root se crean las variables*/
+  /*  Variables del proyecto  */
+
+  /*  Anchura máxima del contenido en desktop */
+  --max-width: 1280px;
+
+  /*  Colores  */
+  --primary-color: tomato;
+  /*color primario*/
+  --primary-color-alt: rgb(255,150,71);
+  /*color primario alterno*/
+  --title-color: rgb(255,50,71);
+  /*color del titulo*/
+  --text-special: rgb();
+  --text-color: rgb(20,0,150);
+  /*color del texto*/
+  --body-bg-color: rgb(231, 222, 253);
+  /*color del cuerpo bg*/
+  --white-color: #ffffff;
+  /*color blanco*/
+  --color: var(--primary-color);
+  /*color que se iguala a la variable del color primario*/
+  --color-alt: var(--primary-color-alt);
+  /*color alternativo que se iguala a ala variable del color primario alternativo*/
+
+  /*  Fuentes  */
+  --body-font: 'Nunito', sans-serif;
+   /*fuente del cuerpo*/
+  --h1-font-special: 'Gluten', cursive;
+   /*fuente para titulo especial (floriambra)*/
+  --h1-font-special2: 'Mukta', sans-serif ;
+  /*fuente para titulo especial (&)*/
+  --title-font: 'Nunito', sans-serif;
+  /*fuente del titulo*/
+
+  /*  Tamaños (anchura y tamaños de los contenedores(div) */
+  --header-height: 3rem;
+  /*altura del encabezado*/
+  --section-spacing: 4rem;
+  /*separacion entre secciones*/
+  --block-spacing: 2rem;
+  /*separacion entre bloques*/
+  --body-line-height: 1.6;
+  /*altura de la linea de cuerpo*/
+  --title-line-height: 1.3;
+  /*titulo de la linea de cuerpo*/
+
+  /* Tamaños de fuentes */
+  --h1-font-size: 2rem;
+  /*tamaño de la fuente h1*/
+  --h2-font-size: 1.5rem;
+  /*tamaño de la fuente h2*/
+  --h3-font-size: 1.25rem;
+  /*tamaño de la fuente h3*/
+  --h4-font-size: 1rem;
+  /*tamaño de la fuente h4*/
+  --big-font-size: 1rem;
+  /*tamaño de la fuente grande*/
+  --normal-font-size: 0.875rem;
+  /*tamaño de la fuente normal*/
+  --small-font-size: 0.75rem;
+  /*tamaño de la fuente pequeño*/
+  --smaller-font-size: 0.6875rem;
+  /*tamaño de la fuente mas pequeño*/
+
+  /* Capas */
+  --z-back: -10;
+  /*z atras*/
+  --z-normal: 1;
+  /*z normal*/
+  --z-front: 10;
+  /*z frente*/
+  --z-tooltip: 20;
+  /*z informacion sobre herramientas*/
+  --z-overlay: 30;
+  /*z cubrir*/
+  --z-modal: 40;
+  /*z modal*/
+  --z-fixed: 50;
+  /*fijado*/
+  --z-off-canvas: 100;
+  /*z fuera del lienzo*/
+
+  /* Otros */
+  --border-radius: 0.5rem;
+  /*radio del borde*/
+  --box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
+  /*sombra*/
+}
+
+@media screen and (min-width: 1024px) {
+  /*@media screen and (min-width: 1024px) esto es para definicon de pantallas = o > ah 1024 pixeles*/
+
+  /*  Variables de tamaño en desktop  */
+  :root {
+    --header-height: 4rem;
+    /*altura del encabezado*/
+    --section-spacing: 8rem;
+    /*separacion de secciones*/
+    --block-spacing: 4rem;
+    /*separacion de bloques*/
+    --h1-font-size: 3rem;
+    /*tamaño de la fuente en h1*/
+    --h2-font-size: 2rem;
+    /*tamaño de la fuente en h2*/
+    --h3-font-size: 1.5rem;
+    /*tamaño de la fuente en h3*/
+    --h4-font-size: 1.25rem;
+    /*tamaño de la fuente en h4*/
+    --big-font-size: 1.25rem;
+    /*tamaño de la fuente grande*/
+    --normal-font-size: 1rem;
+    /*tamaño de la fuente normal*/
+    --small-font-size: 0.875rem;
+    /*tamaño de la fuente pequeña*/
+    --smaller-font-size: 0.75rem;
+    /*tamaño de la fuente mas pequeña*/
+  }
+
+}
+
+/*componentes bases*/
+body {
+  /*cuerpo*/
+  display: flex;
+  /*hace que el contenedor se flexible a los cambios*/
+  flex-direction: column;
+  /*Establece la dirección principal de los elementos flexibles dentro del contenedo*/
+  min-height: calc(100vh - var(--header-height));
+  color: var(--text-color);
+  padding-top: var(--header-height);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  line-height: var(--body-line-height);
+  /*altura de linea de un elemento de texto*/
+  background-color: var(--body-bg-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+p {
+  margin-top: 0;
+}
+h1 .special{
+  margin-top: 0;
+  color: var(--text-special);
+  font-family: var(--h1-font-special);
+  line-height: var(--title-line-height);
+  font-weight: 800;
+}
+
+.special2{
+    margin-top: 0;
+    color: var(--title-color);
+    font-family: var(--h1-font-special2);
+    line-height: var(--title-line-height);
+    font-weight: 800;
+}
+
+h1{
+  margin-top: 0;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  line-height: var(--title-line-height);
+  font-weight: 800;
+
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  line-height: var(--title-line-height);
+  font-weight: 800;
+  /*grosor o peso de la fuente de un elemento de texto.*/
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+.banner{
+  height: 2rem;
+  border: 1px solid black;
+  margin-top: 0;
+  padding: 2.5rem;
+  
+}
+
+.image-banner{
+    width: 0.5px;
+    height: 0.5px;
+   
+   
+}

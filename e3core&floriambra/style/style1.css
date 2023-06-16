@@ -34,6 +34,8 @@ font-family: 'Mukta', sans-serif;
   /*color del titulo*/
   --text-special: rgb(90, 7, 158);
   /*color de texto especial*/
+  --text-special-trans: rgb(90, 7, 158,0.8);
+  /*color de texto especial con transparencia*/
   --text-color: rgb(20,0,150);
   /*color del texto*/
   --body-bg-color: rgb(231, 222, 253);
@@ -206,7 +208,7 @@ h3 {
 h4 {
   font-size: var(--h4-font-size);
 }
-
+/*
 .header {
   background-color: #ffc3a7;
   padding: 20px;
@@ -239,5 +241,88 @@ h4 {
   box-shadow: 2px 3px 5px 1px rgba(36, 47, 66, 0.1);
   border-radius: 10px ;
   height: 50%;
+}
+*/
+.content-wrapper {
+  width: calc(100% - 2rem);
+  max-width: var(--max-width);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+.content-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.main-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  margin-bottom: 30px;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px rgb(145, 139, 139);
+}
+
+.image-header{
+  width: 20%;
+  height: auto;
+}
+
+.menu-header{
+  margin-right: 5px;
+}
+
+.list-header{
+ display: flex;
+}
+
+.list-header li{
+  margin-right: 25px;
+  background-color: var(--text-special-trans);
+  border-radius: 6px;
+  box-shadow: 2px 1.5px 5px rgb(49, 45, 45);
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5px;
+}
+
+.list-header a{
+  text-decoration: none;
+  font-family: var(--title-font);
+  color: white;
+  margin: 15px 15px;
+  
+}
+.list-header a:hover{
+  background-color:var(--title-color);
+  color: white;
+  margin: auto;
+  padding: 3px 15px;
+  box-shadow: 5px 3px 5px rgb(49, 45, 45);
+  border-radius: 6px;
+  border: 1.5px inset rgb(49, 45, 45);
+}
+
+
+.section-container{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: space-around;
+  background-color: var(--white-color);
+  box-shadow: 1px 1px 1px 1px rgb(145, 139, 139);
+}
+
+.image-section{
+  width: 40%;
+  height: auto;
+  float: right;
+  padding: 10px;
+ 
 }
 

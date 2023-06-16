@@ -32,12 +32,13 @@ font-family: 'Mukta', sans-serif;
   /*color primario alterno*/
   --title-color: rgb(255,50,71);
   /*color del titulo*/
-  --text-special: rgb();
+  --text-special: rgb(90, 7, 158);
+  /*color de texto especial*/
   --text-color: rgb(20,0,150);
   /*color del texto*/
   --body-bg-color: rgb(231, 222, 253);
   /*color del cuerpo bg*/
-  --white-color: #ffffff;
+  --white-color: #ffc2a9;
   /*color blanco*/
   --color: var(--primary-color);
   /*color que se iguala a la variable del color primario*/
@@ -55,7 +56,7 @@ font-family: 'Mukta', sans-serif;
   /*fuente del titulo*/
 
   /*  Tamaños (anchura y tamaños de los contenedores(div) */
-  --header-height: 3rem;
+  --header-height: 1rem;
   /*altura del encabezado*/
   --section-spacing: 4rem;
   /*separacion entre secciones*/
@@ -114,7 +115,7 @@ font-family: 'Mukta', sans-serif;
 
   /*  Variables de tamaño en desktop  */
   :root {
-    --header-height: 4rem;
+    --header-height: 0rem;
     /*altura del encabezado*/
     --section-spacing: 8rem;
     /*separacion de secciones*/
@@ -164,7 +165,7 @@ a {
 p {
   margin-top: 0;
 }
-h1 .special{
+.special{
   margin-top: 0;
   color: var(--text-special);
   font-family: var(--h1-font-special);
@@ -217,17 +218,36 @@ h4 {
   font-size: var(--h4-font-size);
 }
 
-.banner{
-  height: 2rem;
-  border: 1px solid black;
-  margin-top: 0;
-  padding: 2.5rem;
-  
+.header {
+  background-color: #ffc3a7;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0%;
 }
 
-.image-banner{
-    width: 0.5px;
-    height: 0.5px;
-   
-   
+.header img {
+  width: 100px;
+  height: auto;
+}
+
+.header div {
+  display: flex;
+  gap: 10px;
+}
+
+.header a {
+  font-family: var(--body-font);
+  text-decoration: none;
+  color: var(--title-color);
+  font-weight: bold;
+  padding: 5px;
+}
+
+.header a:hover {
+  background-color: #a57ed8;
+  box-shadow: 2px 2px 2px 2px rgba(36, 47, 66, 0.1);
+  border-radius: 10px ;
+  height: 50%;
 }

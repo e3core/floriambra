@@ -40,7 +40,7 @@ font-family: 'Mukta', sans-serif;
   /*color del texto*/
   --body-bg-color: rgb(231, 222, 253);
   /*color del cuerpo bg*/
-  --white-color: #ffc2a9;
+  --white-color: rgb(255, 194, 169);
   /*color blanco*/
   --color: var(--primary-color);
   /*color que se iguala a la variable del color primario*/
@@ -156,8 +156,12 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   line-height: var(--body-line-height);
-  /*altura de linea de un elemento de texto*/
+  background-image: url(/e3core&floriambra/img/fondo.jpg);
+  background-size: contain;
+  background-position: center center;
+  /*altura de linea de un elemento de texto
   background-color: var(--body-bg-color);
+  */
 }
 
 p {

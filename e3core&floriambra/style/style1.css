@@ -157,7 +157,7 @@ body {
   font-size: var(--normal-font-size);
   line-height: var(--body-line-height);
   background-image: url(/e3core&floriambra/img/fondo.jpg);
-  background-size: contain;
+  background-size: auto;
   background-position: center center;
   /*altura de linea de un elemento de texto
   background-color: var(--body-bg-color);
@@ -287,9 +287,8 @@ h4 {
 
 .list-header li{
   margin-right: 25px;
-  background-color: var(--text-special-trans);
   border-radius: 6px;
-  box-shadow: 2px 1.5px 5px rgb(49, 45, 45);
+  border: 1px solid var(--text-special);
   text-align: center;
   font-weight: bold;
   padding: 0.5px;
@@ -298,7 +297,7 @@ h4 {
 .list-header a{
   text-decoration: none;
   font-family: var(--title-font);
-  color: white;
+  color: var(--text-special);
   margin: 15px 15px;
   
 }
@@ -306,10 +305,10 @@ h4 {
   background-color:var(--title-color);
   color: white;
   margin: auto;
-  padding: 3px 15px;
+  /*padding: 3px 15px;
   box-shadow: 5px 3px 5px rgb(49, 45, 45);
   border-radius: 6px;
-  border: 1.5px inset rgb(49, 45, 45);
+  border: 1.5px inset rgb(49, 45, 45);*/
 }
 
 

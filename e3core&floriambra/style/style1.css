@@ -38,9 +38,9 @@ font-family: 'Mukta', sans-serif;
   /*color de texto especial con transparencia*/
   --text-color: rgb(20,0,150);
   /*color del texto*/
-  --body-bg-color: rgb(195, 155, 231);
+  --body-bg-color: rgb(255, 240, 233);
   /*color del cuerpo bg*/
-  --white-color: rgb(255, 194, 169);
+  --white-color: rgb(255, 226, 242);
   /*color blanco*/
   --color: var(--primary-color);
   /*color que se iguala a la variable del color primario*/
@@ -70,7 +70,7 @@ font-family: 'Mukta', sans-serif;
   /*titulo de la linea de cuerpo*/
 
   /* Tamaños de fuentes */
-  --h1-font-size: 2rem;
+  --h1-font-size: 4rem;
   /*tamaño de la fuente h1*/
   --h2-font-size: 1.5rem;
   /*tamaño de la fuente h2*/
@@ -111,248 +111,64 @@ font-family: 'Mukta', sans-serif;
   --box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
   /*sombra*/
 }
-
-@media screen and (min-width: 1024px) {
-  /*@media screen and (min-width: 1024px) esto es para definicon de pantallas = o > ah 1024 pixeles*/
-
-  /*  Variables de tamaño en desktop  */
-  :root {
-    --header-height: 0rem;
-    /*altura del encabezado*/
-    --section-spacing: 8rem;
-    /*separacion de secciones*/
-    --block-spacing: 4rem;
-    /*separacion de bloques*/
-    --h1-font-size: 3rem;
-    /*tamaño de la fuente en h1*/
-    --h2-font-size: 2rem;
-    /*tamaño de la fuente en h2*/
-    --h3-font-size: 1.5rem;
-    /*tamaño de la fuente en h3*/
-    --h4-font-size: 1.25rem;
-    /*tamaño de la fuente en h4*/
-    --big-font-size: 1.25rem;
-    /*tamaño de la fuente grande*/
-    --normal-font-size: 1rem;
-    /*tamaño de la fuente normal*/
-    --small-font-size: 0.875rem;
-    /*tamaño de la fuente pequeña*/
-    --smaller-font-size: 0.75rem;
-    /*tamaño de la fuente mas pequeña*/
-  }
-
-}
-
-/*componentes bases*/
-body {
-  /*cuerpo*/
-  display: flex;
-  /*hace que el contenedor se flexible a los cambios*/
-  flex-direction: column;
-  /*Establece la dirección principal de los elementos flexibles dentro del contenedo*/
-  min-height: calc(100vh - var(--header-height));
-  color: var(--text-color);
-  padding-top: var(--header-height);
+body{
+  background: #ffbbbb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fde2d7, #fdcfcd);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fde2d7, #fdcfcd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  line-height: var(--body-line-height);
-  background-image: url(/e3core&floriambra/img/fondo\ size.jpg);
-  background-size:cover;
-  background-position: center center;
-  /*altura de linea de un elemento de texto
-  background-color: var(--body-bg-color);
-  */
+  color: var(--white-color);
 }
 
-p {
-  font-size: 1rem;
-  margin-top: 0;
-  font-weight: 800;
-}
-@media screen and (min-width: 1024px) {
-  p {
-    font-size: 1.5rem;
-    margin-top: 0;
-    font-weight: 600;
-  }
-}
-
-.special{
-  margin-top: 0;
-  color: var(--text-special);
-  font-family: var(--h1-font-special);
-  line-height: var(--title-line-height);
-  font-weight: 800;
-}
-
-.special2{
-    margin-top: 0;
-    color: var(--title-color);
-    font-family: var(--h1-font-special2);
-    line-height: var(--title-line-height);
-    font-weight: 800;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  color: var(--title-color);
-  font-family: var(--title-font);
-  line-height: var(--title-line-height);
-  font-weight: 800;
-  /*grosor o peso de la fuente de un elemento de texto.*/
-}
-
-h1 {
-  font-size: var(--h1-font-size);
-}
-
-h2 {
-  font-size: var(--h2-font-size);
-}
-
-h3 {
-  font-size: var(--h3-font-size);
-}
-
-h4 {
-  font-size: var(--h4-font-size);
-}
-
-.content-wrapper {
-  width: calc(100% - 2rem);
-  max-width: var(--max-width);
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-@media screen and (min-width: 1024px) {
-
-.content-wrapper {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
- .container{
+.container-menu{
+  background-color: var(--white-color);
   padding: 5px;
-  width: 50%;
-  margin: 10px 40px;
- }
-
-.main-header{
+  margin-bottom: 50px;
+}
+#logo1{
+  margin-bottom: 25px;
+}
+.menu{
   display: flex;
   justify-content: space-between;
-  background-color: var(--body-bg-color);
-  background-size:140%;
-  margin-bottom: 30px;
-  align-items: center;
-  box-shadow: 1px 1px 1px 1px rgb(176, 131, 212);
-  padding: 2px;
+  align-items:center ;
 }
-/*
-.image{
-  background-image: url(/e3core&floriambra/img/fondo\ size.jpg);
-  background-size: cover;
-}
-*/
-.image-header{
+
+.menu img{
   width: 10%;
-  height: 15%;
-  margin-top: 10px;
-  margin-left: 10px
+  height: 10%;
 }
 
-#img-header-2{
-  margin-bottom: 20px;
+.menu-list{
+  display: flex;
 }
 
-.menu-header{
-  margin:1px 2px;
-}
-
-.list-header{
- display: flex;
-}
-
-.list-header li{
-  margin:1px 10px;
-  text-align: center;
-  font-weight: bold;
-  padding: 0.5px;
-}
-
-.list-header a{
-  border-radius: 12px;
-  border: 1px solid var(--text-special);
-  text-decoration: none;
-  font-family: var(--title-font);
-  color: var(--text-special);
-  margin: 15px 15px;
-  padding: 5px 8px;
-  
-}
-.list-header a:hover{
-  background-color:var(--title-color);
-  color: white;
-  border-radius: 12px;
-  border: 0px solid transparent;
-}
-
-
-.section-container{
-  display: flex;  
-  justify-content: center; 
-  align-items: center;
-  margin:2em 0em 8em 0em;
-  background-color: var(--body-bg-color);
-  box-shadow: 2px 2px 1px 1px rgb(176, 131, 212);
-}
-
-
-.image-section{
-  width: 50%;
-  float: left;
+.menu-list a{
   align-content: center;
-  padding: 2px;
- 
-}
-
-.image-items{
-  width: 10em;
-  height: 10em;
-  border-radius: 15px;
-}
-.container-items{
-  justify-content: flex-end;
-
-}
-
-.main-text{
-  text-align: center;
-  color: var(--text-special);
-  font-weight: bold;
-}
-
-.section-container .text{
-  text-align: center;
-  color: white;
-  margin: 2rem 2rem;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 5px 10px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-list a:hover{
   background-color: var(--title-color);
-  border: 1px solid rgb(107, 16, 16);
+  border: 1px solid var(--title-color);
+  color: var(--white-color);
+  transition: 0.3s;
 }
 
-.text{
-  padding: 1rem;
+.main-title{
+  color: var(--title-color);
+  font-size: var(--h1-font-size);
+  text-align: center;
 }
 
-#mens{
-  margin-top: 3em;
-  margin-left:20rem;
+.main-title .special{
+  color: var(--text-special);
+  font-size: var(--h1-font-size);
+  font-family: var(--h1-font-special);
 }
-

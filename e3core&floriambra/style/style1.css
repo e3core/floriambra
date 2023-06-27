@@ -113,9 +113,7 @@ font-family: 'Mukta', sans-serif;
   /*sombra*/
 }
 body{
-  background: #ffbbbb;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fde2d7, #fdcfcd);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fde2d7, #fdcfcd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #fff;
   font-family: var(--body-font);
   color: var(--white-color);
 }
@@ -178,6 +176,8 @@ body{
   display: flex;
   justify-content: center;
   background-color: var(--white-color);
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .section-text{
@@ -186,7 +186,7 @@ body{
   border-radius: 30px;
   background-color: var(--title-color);
   box-shadow: 1px 1px 1px 1px var(--color-sombra);
-  padding: 40px;
+  padding: 50px;
 
 }
 
@@ -205,12 +205,46 @@ body{
 }
 
 .image-description{
-  display: flex;
+  display:inline-block;
   justify-content: space-around;
   align-items: center;
 }
 
 .image-description img{
-  width: 60%;
-  height: 60%;
+  max-width: 15rem;
+  margin: 5px;
+}
+.image-description .core-right{
+  margin-top: 70px;
+  margin-left: 120px;
+}
+
+.container-image-right{
+  display: flex;
+  margin-right: 50px;
+}
+
+.container-image-right .image{
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.image-description .core-left{
+  margin-top: 70px;
+  margin-left: 180px;
+  padding-top: 80px;
+}
+
+.container-image-left{
+  display: flex;
+  margin-left: 50px;
+}
+
+.container-image-left .image{
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 10px;
 }

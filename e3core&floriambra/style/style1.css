@@ -42,6 +42,7 @@ font-family: 'Mukta', sans-serif;
   /*color del cuerpo bg*/
   --white-color: rgb(255, 226, 242);
   /*color blanco*/
+  --color-sombra: rgb(184, 95, 144);
   --color: var(--primary-color);
   /*color que se iguala a la variable del color primario*/
   --color-alt: var(--primary-color-alt);
@@ -171,4 +172,45 @@ body{
   color: var(--text-special);
   font-size: var(--h1-font-size);
   font-family: var(--h1-font-special);
+}
+
+.container-section{
+  display: flex;
+  justify-content: center;
+  background-color: var(--white-color);
+}
+
+.section-text{
+  margin: 120px 60px 120px 50px;
+  border: 1px solid var(--primary-color);
+  border-radius: 30px;
+  background-color: var(--title-color);
+  box-shadow: 1px 1px 1px 1px var(--color-sombra);
+  padding: 40px;
+
+}
+
+.section-text p{
+  text-align: justify;
+  font-size: var(--h2-font-size);
+}
+
+.image-section{
+  padding: 20px;
+}
+
+.image-section img{
+  max-width: 18rem;
+  margin-left: 50px;
+}
+
+.image-description{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-description img{
+  width: 60%;
+  height: 60%;
 }

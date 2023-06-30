@@ -28,7 +28,7 @@ font-family: 'Mukta', sans-serif;
   /*  Colores  */
   --primary-color: tomato;
   /*color primario*/
-  --primary-color-alt: rgb(255,150,71);
+  --primary-color-alt: rgb(255, 222, 197);
   /*color primario alterno*/
   --title-color: rgb(255,50,71);
   /*color del titulo*/
@@ -38,15 +38,12 @@ font-family: 'Mukta', sans-serif;
   /*color de texto especial con transparencia*/
   --text-color: rgb(20,0,150);
   /*color del texto*/
-  --body-bg-color: rgb(255, 240, 233);
+  --body-bg-color: rgb(38, 6, 56, 0.836);
   /*color del cuerpo bg*/
-  --white-color: rgb(255, 226, 242);
+  --white-color: rgb(255, 226, 242,0.300);
   /*color blanco*/
   --color-sombra: rgb(184, 95, 144);
-  --color: var(--primary-color);
-  /*color que se iguala a la variable del color primario*/
-  --color-alt: var(--primary-color-alt);
-  /*color alternativo que se iguala a ala variable del color primario alternativo*/
+  
 
   /*  Fuentes  */
   --body-font: 'Nunito', sans-serif;
@@ -113,9 +110,9 @@ font-family: 'Mukta', sans-serif;
   /*sombra*/
 }
 body{
-  background-color: #fff;
+  background-color: var(--body-bg-color);
   font-family: var(--body-font);
-  color: var(--white-color);
+  color: #fff;
 }
 
 .container-menu{
@@ -123,9 +120,7 @@ body{
   padding: 5px;
   margin-bottom: 50px;
 }
-#logo1{
-  margin-bottom: 25px;
-}
+
 .menu{
   display: flex;
   justify-content: space-between;
@@ -133,6 +128,14 @@ body{
 }
 
 .menu img{
+  width: 15%;
+  height: 15%;
+  margin: 0;
+}
+
+#logo1{
+  margin-bottom: 20px;
+  margin-left: 20px;
   width: 10%;
   height: 10%;
 }
@@ -146,8 +149,8 @@ body{
   text-decoration: none;
   margin-right: 20px;
   padding: 5px 10px;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--primary-color-alt);
+  border: 1px solid var(--primary-color-alt);
   border-radius: 20px;
   font-weight: bold;
   transition: 0.3s;
@@ -156,7 +159,7 @@ body{
 .menu-list a:hover{
   background-color: var(--title-color);
   border: 1px solid var(--title-color);
-  color: var(--white-color);
+  color: var(--primary-color-alt);
   transition: 0.3s;
 }
 
@@ -167,7 +170,7 @@ body{
 }
 
 .main-title .special{
-  color: var(--text-special);
+  color: var(--primary-color);
   font-size: var(--h1-font-size);
   font-family: var(--h1-font-special);
 }
@@ -175,17 +178,14 @@ body{
 .container-section{
   display: flex;
   justify-content: center;
-  background-color: var(--white-color);
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
 }
 
 .section-text{
   margin: 120px 60px 120px 50px;
-  border: 1px solid var(--primary-color);
   border-radius: 30px;
   background-color: var(--title-color);
-  box-shadow: 1px 1px 1px 1px var(--color-sombra);
   padding: 50px;
 
 }
@@ -252,6 +252,7 @@ body{
 .container-select{
   flex-direction: column;
   align-items: center;
+  background-color: var(--white-color);
 }
 .select-items{
   display: flex;
@@ -264,30 +265,42 @@ body{
 }
 .container-select h2{
   margin: 50px 0;
-  color: var(--title-color);
-  font-size: var(--h3-font-size);
+  color: #fff;
+  font-size: var(--h2-font-size);
+
 }
 .select{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5px 5px 30px 5px;
+  padding: 10px 0px;
   font-size: var(--h2-font-size);
 
-}
-.select:hover{
-  background-color: var(--title-color);
-  border-radius: 25px;
+
 }
 
 .select a{
   text-decoration: none;
   text-align: center;
+  padding: 10px 15px;
+  border: 1px solid var(--primary-color-alt);
+  color: var(--primary-color-alt);
+  border-radius: 20px;
+  transition:.4s;
 }
 .select a:hover{
   color: #fff;
+  background-color: var(--title-color);
+  border: none;
+  transition:.4s;
 }
 .select img{
   width: 40%;
 
+}
+
+.footer{
+  margin: 15px 0;
+  padding: 15px 15px;
 }

@@ -38,7 +38,7 @@ font-family: 'Mukta', sans-serif;
   /*color de texto especial con transparencia*/
   --text-color: rgb(20,0,150);
   /*color del texto*/
-  --body-bg-color: rgb(38, 6, 56, 0.836);
+  --body-bg-color: rgba(15, 2, 22, 0.836);
   /*color del cuerpo bg*/
   --white-color: rgb(255, 226, 242,0.300);
   /*color blanco*/

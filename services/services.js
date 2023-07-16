@@ -1,16 +1,17 @@
-const express = require('express')
-const app = express()
-const path = require('path')
-const port = 5005
+const http = require('http')
+const server = http.createServer(onRequest)
+server.listen(3000)
+console.log('Servidor escuchando por el puerto 3000')
 
-// Configura la carpeta pública para archivos estáticos
-app.use(express.static(path.join(__dirname, '../e3core&floriambra')));
+function onRequest(request,response){
+    console.log('Servidor realizando peticion')
+    const fs = require('fs')
+    if (request.url == '/'){
+        fs.readFile('D:/PROYECTOS-R/floriambra/e3core&floriambra/index.html',(err,content)=>{
+            response.setHeader('content-type','text/html')
+            response.write(content)
+            response.end()
+        })
+    }
+}
 
-app.get('/',(request,response)=> {
-    const filePath = path.join(__dirname, '../e3core&floriambra/index.html')
-    response.sendFile(filePath)
-})
-
-app.listen(port,()=> {
-    console.log('mi aplicacion esta corriendo por el puerto 5005')
-})

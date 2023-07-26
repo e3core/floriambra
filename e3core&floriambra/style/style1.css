@@ -178,6 +178,12 @@ body{
   padding: .5em 1.5em;
 }
 
+.container-section2{
+  display: flex;
+  flex-direction: column;
+  padding: .5em 1.5em;
+}
+
 .section{
   margin: 3em 0;
   padding: 1em 0;
@@ -330,6 +336,13 @@ body{
   width: 40%;
 
 }
+
+.section-text2{
+  text-align: center;
+  font-size: var(--h3-font-size);
+}
+
+
 
 footer{
   margin: 15px 0;

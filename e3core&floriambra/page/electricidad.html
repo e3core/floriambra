@@ -41,15 +41,72 @@
             <div class="main-title">
                 <h3 class="special">Magnitudes Electricas</h3>
             </div>
-            <div class="container-section">
-                <div><p class="section-text">voltaje</p></div>
-                <div><p class="section-text">corrinete</p></div>
-                <div><p class="section-text">resistencia</p></div>
+            <div class="container-flex">
+                <div><p class="section-text-card">Tension o voltaje(V): Es la diferencia de potencial eléctrico entre dos puntos de un circuito. Representa la fuerza o presión que impulsa a los electrones a través de un conductor y se mide en voltios (V). </p></div>
+                <div><p class="section-text-card">Corriente(I): Es el flujo de carga eléctrica a través de un conductor. Indica la cantidad de electrones que pasa por un punto en un tiempo dado y se mide en amperios (A).</p></div>
+                <div><p class="section-text-card">Resistencia(R): Es la oposición que ofrece un material o dispositivo al paso de la corriente eléctrica. Se mide en ohmios (Ω).</p></div>
+                <div><p class="section-text-card">Potencia (P): Representa la cantidad de energía eléctrica consumida o entregada por un dispositivo o circuito en un período de tiempo dado. Se mide en vatios (W).</p></div>
+                <div><p class="section-text-card">Energía (E): Es la cantidad total de trabajo realizado por una corriente eléctrica a lo largo del tiempo. Se mide en julios (J) o vatios-hora (Wh).</p></div>
+                <div><p class="section-text-card">Capacitancia (C): Es la capacidad de almacenar carga eléctrica en un capacitor. Se mide en faradios (F).</p></div>
+                <div><p class="section-text-card">Inductancia (L): Es la propiedad de un inductor para generar una tensión opuesta a los cambios en la corriente eléctrica que circula por él. Se mide en henrios (H).</p></div>
+                <div><p class="section-text-card">Frecuencia (f): Es la cantidad de ciclos o oscilaciones completas que ocurren en un segundo en una señal periódica. Se mide en hertz (Hz).</p></div>
+                <div><p class="section-text-card">Reactancia (X): Es la oposición que ofrece un inductor o un capacitor al paso de la corriente alterna. La reactancia se  mide en ohmios (Ω)</p></div>
+                <div><p class="section-text-card">Impedancia (Z): Es la combinación de la resistencia y la reactancia en un circuito de corriente alterna. Representa la  oposición total que ofrece un circuito al flujo de corriente alterna y se mide en ohmios (Ω).</p></div>
+                <div><p class="section-text-card">Admitancia (Y): Es el inverso de la impedancia y representa la facilidad con la que fluye la corriente en un circuito de corriente alterna. Se mide en siemens (S) o mhos (℧).</p></div>
+                <div><p class="section-text-card">Coeficiente de Temperatura (α): Es el cambio en la resistencia de un material conductor en función de la temperatura. Se expresa en ohmios por grado Celsius (Ω/°C).</p></div>
+                <div><p class="section-text-card">Factor de Potencia (FP): Es la relación entre la potencia activa (W) y la potencia aparente (VA) en un circuito de corriente alterna. Un factor de potencia cercano a 1 indica una carga eficiente, mientras que un factor de potencia bajo indica una carga ineficiente.</p></div>
+                <div><p class="section-text-card">Armónicos: Son componentes de frecuencia que se encuentran en una señal periódica y que son múltiplos enteros de la frecuencia fundamental. Los armónicos pueden causar problemas en los sistemas eléctricos y electrónicos, especialmente en sistemas de distribución de energía y en equipos sensibles.</p></div>
+                <div><p class="section-text-card">Coeficiente de Autoinducción (L): Es el coeficiente que relaciona la autoinducción de una bobina con la cantidad de flujo magnético que atraviesa la misma cuando circula por ella una corriente variable.</p></div>
+            
+            
             </div>
         </section>
+        <section>
+            <div class="main-title">
+                <h3 class="special">ley de ohm</h3>
+            </div>
+            <div class="container-section">
+                <p class="section-text text-center ">
+                    En un conductor que se mantiene a temperatura constante (es decir, una resistencia constante), la corriente que fluye a través del conductor es directamente proporcional a la diferencia de potencial (voltaje) aplicada entre sus extremos.<br>
+                    Voltaje(V) = Corriente(I) * Resistencia(Ω)<br>
+                    Resistencia(Ω) = Voltaje(V) / Corriente(I)<br>
+                    Corriente(I)= Voltaje(V) / Resistencia(Ω)
 
+                </p>
+            </div>
+            <div class="container-section">
+                <div>
+                    <form action="" name="Calcular Voltaje segun la ley de ohm">
+                        <label for="Corriente1" id="Corriente-ohm1">Ingrese la Corriente:</label>
+                        <input type="number" id="Corriente1">
+                        <label for="Resistencia1" id="Resistencia-ohm1">Ingrese la Resistencia</label>
+                        <input type="number" id="Resistencia1">
+                        <input type="submit" value="Calcular">
 
+                    </form>
+                </div>
+                <div>
+                    <form action="" name="Calcular Corriente segun la ley de ohm">
+                        <label for="Voltaje2" id="Voltaje-ohm2">Ingrese la Voltaje:</label>
+                        <input type="number" id="Voltage2">
+                        <label for="Resistencia2" id="Resistencia-ohm2">Ingrese la Resistencia</label>
+                        <input type="number" id="Resistencia2">
+                        <input type="submit" value="Calcular">
 
+                    </form>
+                </div>
+                <div>
+                    <form action="" name="Calcular Resistencia segun la ley de ohm">
+                        <label for="Corriente3" id="Corriente-ohm3">Ingrese la Voltaje:</label>
+                        <input type="number" id="Corriente3">
+                        <label for="Resistencia3" id="Resistencia-ohm3">Ingrese la Resistencia</label>
+                        <input type="number" id="Resistencia3">
+                        <input type="submit" value="Calcular">
+
+                    </form>
+                </div>
+            </div>
+        </section>
 
     </main>
 

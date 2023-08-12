@@ -75,33 +75,34 @@
                 </p>
             </div>
             <div class="container-section">
-                <div>
-                    <form action="" name="Calcular Voltaje segun la ley de ohm">
-                        <label for="Corriente1" id="Corriente-ohm1">Ingrese la Corriente:</label>
-                        <input type="number" id="Corriente1">
-                        <label for="Resistencia1" id="Resistencia-ohm1">Ingrese la Resistencia</label>
-                        <input type="number" id="Resistencia1">
+                <div class="section-text"">
+                    <form class="form" name="Calcular Voltaje segun la ley de ohm" id="form_voltage" >
+                        <label for="current1" id="current-ohm1">Ingrese la Corriente: </label>
+                        <input type="number" id="current1">
+                        <label for="endurance1" id="endurance-ohm1">Ingrese la Resistencia: </label>
+                        <input type="number" id="endurance1">
+                        <input type="submit" value="Calcular"  >
+
+                    </form>
+                </div>
+                <div style="background-color: coral;">
+                    <form action="" name="Calcular Corriente segun la ley de ohm" id="form_current">
+                        <label for="voltaje2" id="voltaje-ohm2">Ingrese la Voltaje:</label>
+                        <input type="number" id="voltage2">
+                        <label for="endurance2" id="endurance2-ohm2">Ingrese la Resistencia</label>
+                        <input type="number" id="endurance2">
                         <input type="submit" value="Calcular">
 
                     </form>
                 </div>
-                <div>
-                    <form action="" name="Calcular Corriente segun la ley de ohm">
-                        <label for="Voltaje2" id="Voltaje-ohm2">Ingrese la Voltaje:</label>
-                        <input type="number" id="Voltage2">
-                        <label for="Resistencia2" id="Resistencia-ohm2">Ingrese la Resistencia</label>
-                        <input type="number" id="Resistencia2">
+                <div style="background-color: coral;">
+                    <form action="" name="Calcular Resistencia segun la ley de ohm" id="form_endurance">
+                        <label for="voltaje3" id="voltaje-ohm3">Ingrese la Voltaje:</label>
+                        <input type="number" id="voltage3">
+                        <label for="current3" id="current-ohm3">Ingrese la Corriente</label>
+                        <input type="number" id="current3">
                         <input type="submit" value="Calcular">
-
-                    </form>
-                </div>
-                <div>
-                    <form action="" name="Calcular Resistencia segun la ley de ohm">
-                        <label for="Corriente3" id="Corriente-ohm3">Ingrese la Voltaje:</label>
-                        <input type="number" id="Corriente3">
-                        <label for="Resistencia3" id="Resistencia-ohm3">Ingrese la Resistencia</label>
-                        <input type="number" id="Resistencia3">
-                        <input type="submit" value="Calcular">
+                       
 
                     </form>
                 </div>
@@ -115,6 +116,6 @@
 <footer class="container-section">
     <p>&#169 e3core&floriambra  </p>
 </footer>
-
+<script src="../scripts/calculations.js"></script>
 </body>
 </html>

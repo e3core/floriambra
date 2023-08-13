@@ -40,8 +40,13 @@ function two_stage(form,box_one,box_two,calculation){
             result.remove();
         });
         const result = document.createElement('p');
+        result.classList.add("result_form");
         const total =  calculation(number_one,number_two);
-        const totalFixed = total.toFixed(2);
+        let  totalFixed = total.toFixed(2);
+        totalFixed_total = parseFloat(totalFixed);
+        if (totalFixed_total % 1 == 0) {
+           totalFixed = totalFixed_total.toFixed(0);
+        }
         form_main.appendChild(result)
         result.innerHTML = `${totalFixed}`
     

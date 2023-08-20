@@ -163,6 +163,7 @@ body{
   font-size: var(--h1-font-size);
   text-align: center;
   margin: .4em 0;
+  padding: 0 1em;
 }
 
 .main-title .special{
@@ -171,6 +172,11 @@ body{
   font-family: var(--h1-font-special);
 }
 
+.title-secondary{
+  color: var(--primary-color);
+  font-size: var(--h3-font-size);
+  font-family: var(--h1-font-special);
+}
 .container-section{
   display: flex;
   align-items: center;
@@ -377,38 +383,39 @@ body{
   font-size: var(--h3-font-size);
 }
 .form_box{
-  margin: 0.5em;
-  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
   background-color: var(--title-color);
+  border-radius: var(--border-radius);
   padding: 1.5em;
   text-align: start;
   line-height: 1.5em;
   font-size: var(--big-font-size);
-}
-.form{
- display: block;
- margin: 0 auto;
+  margin: 1em;
+
 }
 
-.form h3{
- 
+
+.form_box h3{
   font-size: var(--h3-font-size);
+  padding: 0;
 }
 
-.form label{
+.form_box label{
   display: block;
   margin-top: 1px;
   margin-right: 0em;
 }
 
-.form input{
-  display:block;
-  width: 40%;
+.form_box input{
+  width: 60%;
   padding: .5rem 0rem;
+  margin: 2px 0;
   border: 0px;
   border-radius: var(--border-radius);
   text-align: center;
 }
+
 .form_2{
   background-color: var(--primary-color);
 }
@@ -420,23 +427,44 @@ body{
 .result_form{
   background-color: var(--primary-color);
   text-align: center;
-  border-radius: 6px;
-  padding: .5rem 0rem;
-  width: 50%;
+  border-radius: var(--border-radius);
+  padding: .3rem 0rem;
+  margin-top: 1em;
+  width: 60%;
 }
 
 .form_flex{
   display: flex;
   align-content: center;
   flex-wrap:wrap ;
- 
-
 }
 
 .form_flex h4{
  margin-left: 1em;
  margin-right: 0em;
 }
+
+.section-table{
+  background-color: var(--title-color);
+  border: 2.5px solid white;
+  font-size: var(--h3-font-size);
+  width: 50%;
+  height: 100%;
+}
+
+
+td{
+border: 1px solid white;
+padding: 1em;
+height: 50%;
+text-align: center;
+}
+th{
+  background-color: var(--primary-color);
+  border: 2.5px solid white;
+  padding: 1em;
+}
+
 footer{
   margin: 15px 0;
   padding: 15px 15px;

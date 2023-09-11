@@ -26,7 +26,7 @@
   /*color de texto especial*/
   --text-special-trans: rgb(90, 7, 158,0.8);
   /*color de texto especial con transparencia*/
-  --box-colr: rgb(255, 196, 186);
+  --box-color: rgb(255, 196, 186);
     /*color de casillas*/
   --text-color: rgb(20,0,150);
   /*color del texto*/
@@ -62,9 +62,9 @@
   /* Tamaños de fuentes */
   --h1-font-size: 4rem;
   /*tamaño de la fuente h1*/
-  --h2-font-size: 1.5rem;
+  --h2-font-size: 2.5rem;
   /*tamaño de la fuente h2*/
-  --h3-font-size: 1.25rem;
+  --h3-font-size: 1.5rem;
   /*tamaño de la fuente h3*/
   --h4-font-size: 1rem;
   /*tamaño de la fuente h4*/
@@ -179,6 +179,14 @@ body{
 }
 .container-section{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5em 1.5em;
+}
+
+.container-section-column{
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: .5em 1.5em;
@@ -383,7 +391,7 @@ body{
   font-size: var(--h3-font-size);
 }
 .form_box{
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   background-color: var(--title-color);
   border-radius: var(--border-radius);
@@ -471,3 +479,44 @@ footer{
   color: var(--title-color);
 }
 
+/*-------------------------------------------------------------------------------------------*/
+/* Nuevos estilos 11/09/2023*/
+
+.box-section{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-title{
+  
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: var(--h2-font-size);
+  margin: .5em;
+}
+
+.box-container{
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 2em;
+  margin: .5em 2em;;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  line-height: 1.5em;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.box-center{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}

@@ -29,138 +29,23 @@
         </div> 
     </header>
     <main>
-        <div class="main-title">
-            <h1>Electricidad</h1>
+       
+       <section class="box-section">
+        <div class="box-container">
+            <h1 class="box-title">Electricidad</h1>
         </div>
-       <section class="container-section">
-            <p class="section-text section-text2">Fenómeno físico causado por el flujo de electrones a través <br>de un conductor.
-                 Se manifiesta en diferentes formas, como la electricidad <br>estática
-                  y la electricidad en movimiento (corriente eléctrica).</p>
-        </section>
-        <!-- 
-        <section class="container-section2 background1">
-            <div class="main-title">
-                <h3 class="special">Magnitudes Electricas</h3>
-            </div>
-            <div class="container-flex">
-                <div><p class="section-text-card">Tension o voltaje(V): Es la diferencia de potencial eléctrico entre dos puntos de un circuito. Representa la fuerza o presión que impulsa a los electrones a través de un conductor y se mide en voltios (V). </p></div>
-                <div><p class="section-text-card">Corriente(I): Es el flujo de carga eléctrica a través de un conductor. Indica la cantidad de electrones que pasa por un punto en un tiempo dado y se mide en amperios (A).</p></div>
-                <div><p class="section-text-card">Resistencia(R): Es la oposición que ofrece un material o dispositivo al paso de la corriente eléctrica. Se mide en ohmios (Ω).</p></div>
-                <div><p class="section-text-card">Potencia (P): Representa la cantidad de energía eléctrica consumida o entregada por un dispositivo o circuito en un período de tiempo dado. Se mide en vatios (W).</p></div>
-                <div><p class="section-text-card">Energía (E): Es la cantidad total de trabajo realizado por una corriente eléctrica a lo largo del tiempo. Se mide en julios (J) o vatios-hora (Wh).</p></div>
-                <div><p class="section-text-card">Capacitancia (C): Es la capacidad de almacenar carga eléctrica en un capacitor. Se mide en faradios (F).</p></div>
-                <div><p class="section-text-card">Inductancia (L): Es la propiedad de un inductor para generar una tensión opuesta a los cambios en la corriente eléctrica que circula por él. Se mide en henrios (H).</p></div>
-                <div><p class="section-text-card">Frecuencia (f): Es la cantidad de ciclos o oscilaciones completas que ocurren en un segundo en una señal periódica. Se mide en hertz (Hz).</p></div>
-                <div><p class="section-text-card">Reactancia (X): Es la oposición que ofrece un inductor o un capacitor al paso de la corriente alterna. La reactancia se  mide en ohmios (Ω)</p></div>
-                <div><p class="section-text-card">Impedancia (Z): Es la combinación de la resistencia y la reactancia en un circuito de corriente alterna. Representa la  oposición total que ofrece un circuito al flujo de corriente alterna y se mide en ohmios (Ω).</p></div>
-                <div><p class="section-text-card">Admitancia (Y): Es el inverso de la impedancia y representa la facilidad con la que fluye la corriente en un circuito de corriente alterna. Se mide en siemens (S) o mhos (℧).</p></div>
-                <div><p class="section-text-card">Coeficiente de Temperatura (α): Es el cambio en la resistencia de un material conductor en función de la temperatura. Se expresa en ohmios por grado Celsius (Ω/°C).</p></div>
-                <div><p class="section-text-card">Factor de Potencia (FP): Es la relación entre la potencia activa (W) y la potencia aparente (VA) en un circuito de corriente alterna. Un factor de potencia cercano a 1 indica una carga eficiente, mientras que un factor de potencia bajo indica una carga ineficiente.</p></div>
-                <div><p class="section-text-card">Armónicos: Son componentes de frecuencia que se encuentran en una señal periódica y que son múltiplos enteros de la frecuencia fundamental. Los armónicos pueden causar problemas en los sistemas eléctricos y electrónicos, especialmente en sistemas de distribución de energía y en equipos sensibles.</p></div>
-                <div><p class="section-text-card">Coeficiente de Autoinducción (L): Es el coeficiente que relaciona la autoinducción de una bobina con la cantidad de flujo magnético que atraviesa la misma cuando circula por ella una corriente variable.</p></div>
+        <div class="box-container">
+            <p class="text-center">Fenómeno físico causado por el flujo de electrones a través <br>de un conductor.
+                Se manifiesta en diferentes formas, como la electricidad <br>estática
+                 y la electricidad en movimiento (corriente eléctrica).</p>
+        </div>
             
+        </section>
+       
+        <section class="box-section">
             
-            </div>
-        </section>
-        <section>
-            <div class="main-title">
-                <h3 class="special">ley de ohm</h3>
-            </div>
-            <div class="container-section">
-                <p class="section-text text-center ">
-                    En un conductor que se mantiene a temperatura constante (es decir, una resistencia constante), la corriente que fluye a través del conductor es directamente proporcional a la diferencia de potencial (voltaje) aplicada entre sus extremos.<br>
-                    Voltaje(V) = Corriente(I) * Resistencia(Ω)<br>
-                    Resistencia(Ω) = Voltaje(V) / Corriente(I)<br>
-                    Corriente(I)= Voltaje(V) / Resistencia(Ω)
-
-                </p>
-            </div>
-            <div class="container-section">
-                <div class="form_box">
-                    <form class="form" name="Calcular Voltaje segun la ley de ohm" id="form_voltage" >
-                        <h3>Calcular Voltage</h3>
-                        <label for="current1" id="current-ohm1">Ingrese la Corriente: </label>
-                        <div class="form_flex">
-                            <input type="number" id="current1" required>
-                            <h4>Amp</h4>
-                        </div>
-                        <label for="endurance1" id="endurance-ohm1">Ingrese la Resistencia: </label>
-                        <div class="form_flex">
-                            <input type="number" id="endurance1" required>
-                            <h4>Ohm</h4>
-                        </div>
-                       
-                        <input class="form_2" type="submit" value="Calcular"  >
-
-                    </form>
-                </div>
-                <div class="form_box">
-                    <form class="form" action="" name="Calcular Corriente segun la ley de ohm" id="form_current">
-                        <h3>Calcular corriente</h3>
-                        <label for="voltaje2" id="voltaje-ohm2">Ingrese la Voltaje:</label>
-                        <div class="form_flex">
-                            <input type="number" id="voltage2" required>
-                            <h4>Volt</h4>
-                        </div>
-                       
-                        <label for="endurance2" id="endurance2-ohm2">Ingrese la Resistencia</label>
-                        <div class="form_flex">
-                            <input type="number" id="endurance2" required>
-                            <h4>Ohm</h4>
-                        </div>
-                     
-                        <input class="form_2" type="submit" value="Calcular">
-
-                    </form>
-                </div>
-                <div class="form_box">
-                    <form class="form" name="Calcular Resistencia segun la ley de ohm" id="form_endurance">
-                        <h3>Calcular resistencia</h3>
-                        <label for="voltaje3" id="voltaje-ohm3">Ingrese la Voltaje:</label>
-                        <div class="form_flex">
-                            <input type="number" id="voltage3" required>
-                            <h4>Volt</h4>
-                        </div>
-                        
-                        <label for="current3" id="current-ohm3">Ingrese la Corriente</label>
-                        <div class="form_flex">
-                            <input type="number" id="current3" required>
-                            <h4>Amp</h4>
-                        </div>
-                        
-                        <input class="form_2" type="submit" value="Calcular">
-                       
-
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section >
-            <div class="main-title">
-                <h3 class="special">Resistencias Electricas</h3>
-            </div>
-           <div class="container-section">
-            <p class="section-text section-center">
-                Normalmente es necesario que los aparatos funcionen con unos voltajes y unas corrientes
-                electricas determinados cuando se conectan a los circuitos electricos. Esto se consigue
-                utilizando unos componentes llamados <b>resistencias</b>, que son elementos fabricados 
-                para dar unos valores de resistencias determinados. Una resistencia es un componente de
-                circuito formado por un hilo metalico recubierto con un aislante, o por carbon y una capa
-                ceramica de forma cilindrica, o por una fina pelicula de oxido. En cada terminal de la 
-                resistencia hay un hilo conductor para poder conectarla en los circuitos.<br><br>
-                En trabajos de alta presicion se utiliza la resistencia de hilo arrollado, que es relativamente
-                cara, las resistencias de oxido metalico es mas barata pero de valores menos precisos. Las 
-                resistencias de carbon son las mas utilizadas en aplicaciones qeu no requieren una presicion elevada
-
-            </p>
-           </div>
-
-        </section>
--->
-        <section>
-            <div class="container-section">
-                <div>
-                    <p class="section-text section-center">
+                <div class="box-container">
+                    <p>
                         Electricidad es el fenómeno que produce el movimiento de cargas eléctricas
                         a través un conductor. Se puede concebir como el nivel de capacidad que
                         tiene un cuerpo en un determinado instante para realizar un trabajo.
@@ -192,27 +77,31 @@
                         lo representa con los electrones girando en torno al núcleo del átomo,
                         como lo hace la Luna alrededor de la Tierra.  
                     </p>
-                    <div class="main-title">
-                        <h3 class="special">La electricidad se manifiesta de tres formas fundamentalmente</h3>
                     </div>
-                    <p class="section-text section-center">
-                        A) Electrostática: cuando un cuerpo posee carga positiva o negativa, pero
-                        no se traslada a ningún sitio. Por ejemplo, frotar un bolígrafo de plástico
-                        con una tela para atraer trozos de papel.<br><br>
-                        B) Corriente continua (CC): Cuando los electrones se mueven siempre en
-                        el mismo sentido, del polo negativo al positivo. Las pilas, las baterías de
-                        teléfonos móviles y de los coches producen CC, y también la utilizan, pero
-                        transformada de CA a CC, los televisores, ordenadores, aparatos
-                        electrónicos, etc.<br><br>
-                        C) Corriente alterna (CA): No es una corriente verdadera, porque los
-                        electrones no circulan en un sentido único, sino alterno, es decir
-                        cambiando de sentido unas 50 o 60 veces por segundo, por lo que más bien
-                        oscilan, y por eso se produce un cambio de polos en el enchufe. Este tipo
-                        de corriente es la utilizada en viviendas, industrias, etc., por ser más fácil
-                        de transportar.
-                    </p>
-                    <div class="main-title">
-                        <h3 class="special">Fenómenos magnéticos y electromagnéticos</h3>
+                    <div class="box-container">
+                        <h3 class="box-title">La electricidad se manifiesta de tres formas fundamentalmente</h3>
+                    </div>
+                    <div class="box-container">
+                        <p>
+                            A) Electrostática: cuando un cuerpo posee carga positiva o negativa, pero
+                            no se traslada a ningún sitio. Por ejemplo, frotar un bolígrafo de plástico
+                            con una tela para atraer trozos de papel.<br><br>
+                            B) Corriente continua (CC): Cuando los electrones se mueven siempre en
+                            el mismo sentido, del polo negativo al positivo. Las pilas, las baterías de
+                            teléfonos móviles y de los coches producen CC, y también la utilizan, pero
+                            transformada de CA a CC, los televisores, ordenadores, aparatos
+                            electrónicos, etc.<br><br>
+                            C) Corriente alterna (CA): No es una corriente verdadera, porque los
+                            electrones no circulan en un sentido único, sino alterno, es decir
+                            cambiando de sentido unas 50 o 60 veces por segundo, por lo que más bien
+                            oscilan, y por eso se produce un cambio de polos en el enchufe. Este tipo
+                            de corriente es la utilizada en viviendas, industrias, etc., por ser más fácil
+                            de transportar.
+                        </p>
+                    </div>
+                    
+                    <div class="box-container">
+                        <h3 class="box-title">Fenómenos magnéticos y electromagnéticos</h3>
                     </div>
                     <p class="section-text section-center">
                         Pues bien, algunos tipos de materiales están compuestos por átomos que
@@ -405,11 +294,11 @@
                            
                         
                     </div>
-                      </div>
+                     
                   
               
 
-            </div>
+            
         </section> 
 
         <section>
@@ -473,7 +362,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="container-section-column">
             <div class="container-section">
                 <div class="main-title">
                     <h3 class="special"> Ley de joule</h3>
@@ -535,6 +424,114 @@
                     <input class="form_2" type="submit" value="Calcular">
 
                 </form>
+            </div>
+        </section>
+        <section class="box-section background3">
+            <div class="box-center">
+                <h3 class="box-title">Circuitos electricos</h3>      
+                <div class="box-container">
+                    <p>
+                        Se introduce en este apartado lo que se entiende por circuito eléctrico y la
+                        terminología y conceptos básicos necesarios para su estudio. Un circuito
+                        eléctrico está compuesto normalmente por un conjunto de elementos activos
+                        que generan energía eléctrica (por ejemplo, baterías, que convierten la
+                        energía de tipo químico en eléctrica) y de elementos pasivos -que
+                        consumen dicha energía (por ejemplo, resistencias, que convierten la
+                        energía eléctrica en calor, por efecto Joule) conectados entre sí.
+                    </p>
+                
+                </div>
+                   
+            </div>
+            <div class="box-container">
+                <p>
+                    Estas magnitudes suelen representarse, respectivamente, por I y V y semiden en 
+                    Amperios (A) y Voltios (V) en el Sistema Internacional de Unidades.
+                    La intensidad de corriente eléctrica es la cantidad de carga que, por
+                    segundo, pasa a través de un conductor. El voltaje es una medida de la
+                    separación o gradiente de cargas que se establece
+                    en un elemento del circuito. También se denomina caída de potencial o
+                    diferencia de potencial (d.d.p.) y, en general, se puede definir entre dos
+                    puntos arbitrarios de un circuito.
+                    El voltaje está relacionado con la cantidad de energía que se convierte
+                    de eléctrica en otro tipo (calor en una resistencia) cuando pas a la unidad
+                    de carga por el dispositivo que se considere; se denomina fuerza
+                    electromotriz (f.e.m.) cuando se refiere al efecto contrario, conversión de
+                    energía de otro tipo (por ejemplo, químico en una batería) en energía
+                    eléctrica. La f.e.m. suele designarse por V y, lógicamente, se mide
+                    también en Voltios. Los elementos de un circuito se interconectan
+                    mediante conductores. Los conductores o cables metálicos se utilizan
+                    básicamente para conectar puntos que se desea estén al mismo potencial
+                    (es decir, idealmente la caída de potencial a lo largo de un cable o
+                    conductor metálico es cero). Previo a analizar un circuito conviene
+                    proceder a su simplificación cuando se encuentran asociaciones de
+                    elementos en serie o en paralelo.
+                </p>
+            </div>
+            <div class="box-container">
+                <p class="text-center">
+                    Existen 2 tipos de asociar los elementos e un circuito, entonces serán 2<br>
+                    tipos básicos de circuitos eléctricos. <br>
+                    A. Circuitos en Serie <br>
+                    B. Circuitos en Paralelo <br><br>
+
+                    
+                </p>
+            </div>
+            <div class="box-container">
+                <p>
+                    Circuitos en serie: Se dice que varios elementos están en serie cuandoestán todos en la misma rama y, por tanto, atravesados por la misma
+                    corriente. Si los elementos en serie son Resistencias, ya se ha visto que
+                    pueden sustituirse, independiente de su ubicación y número, por una sola
+                    resistencia suma de todas
+                    las componentes. En esencia lo que se está diciendo es que la dificultad
+                    total al paso de la corriente eléctrica es la suma de las dificultades que
+                    individualmente presentan los elementos componentes. <br>
+                    Circuito en serie de resistencias: <br>
+                    Para conocer la resistencia resultante de este circuito es necesario aplicar la
+                    siguiente fórmula: <br>
+                    RS = R1 + R2 + R3 <br>
+                    Dándole un valor a cada resistencia, por ejemplo, R1= 10 ohm; R2= 8
+                    ohm; R3= 15 ohm, su resultado será, aplicando la fórmula: <br>
+                    RS = R1 + R2 + R3 <br>
+                    10 + 8 + 15 = Rs <br>
+                        Total: 33 ohms <br>
+                    Esta regla particularizada para el caso de Resistencias sirve también
+                    para asociaciones de f.e.m. (baterías), voltaje.
+                </p>
+            </div>
+            <div class="box-container">
+                <p>
+                    Circuitos en paralelo: Por otra parte, se dice que varios elementos están en
+                    Paralelo cuando la caída de potencial entre todos ellos es la misma.
+                    Esto ocurre cuando sus terminales están unidos entre sí. <br>
+                    Circuito en paralelo de resistencias: <br>
+                    Ahora la diferencia de potencial entre cualquiera de las resistencias es V, la
+                    existente entre los puntos A y B. La corriente por cada una de ellas es V/Ri
+                    (i=1, 2,3) y la corriente total que va de A a B (que habría de ser la que
+                    atraviesa Rp cuando se le aplica el mismo potencial) será I1 + I2 + I3. Para
+                    que esto se cumpla el valor de la conductancia 1/Rp ha de ser la suma de
+                    las conductancias de las Resistencias componentes de la asociación: <br>
+                    1/Rp = 1/R1 + 1/R2 + 1/R3 <br>
+                    Lo cual significa que, al haber tres caminos alternativos para el paso de la
+                    corriente, la facilidad de paso (conductancia) ha aumentado: la facilidad
+                    total es la suma de las facilidades.
+                    Las baterías No suelen asociarse en paralelo, debido a su pequeña
+                    resistencia interna. Si se asociaran tendrían que tener la misma f.e.m. que
+                    sería la que se presentaría al exterior. Pero cualquier diferencia daría lugar
+                    a que una de las baterías se descargara en la otra.
+                </p>
+            </div>
+            <div class="box-container">
+                <p>
+                    Dentro de los circuitos eletricos existen los circuitos mixtos, el cual son circuitos compuestos
+                    por circuitos series y circuitos paralelos y su calculo viene de separar los circuitos y calcularlos
+                    de manera independiente y luego sumarlos.Este tipo de montaje se suele dar sobre todo en
+                    electrónica ya que combina muchos elementos que dependen unos de otros,
+                    sucediendo que: si falla uno que está en serie, fallará todo el circuito.
+                </p>
+            </div>
+
             </div>
         </section>
     </main>

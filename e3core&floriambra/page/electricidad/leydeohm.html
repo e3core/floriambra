@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/e3core&floriambra/img/logo e3core&floriambra-icon.jpg">
+    <link rel="stylesheet" href="/e3core&floriambra/style/reset.css">
+    <link rel="stylesheet" href="/e3core&floriambra/style/style1.css">
+    <title>E3core&Floriambra</title>
+</head>
+<body >
+    <!--       
+    -->
+    <header>
+        <div class="container-menu">
+            <nav class="menu">
+                <div class="menu-icons">
+                    <img src="/e3core&floriambra/img/e3core.png" alt="logo nombre e3core"> 
+                    <img src="/e3core&floriambra/img/floriambra.png" alt="logo nombre floriambra">   
+                </div>
+                <div>    
+                    <ul class="menu-list">
+                        <li><a href="../electricidad.html">Inicio</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+    </header>
+    <main>
+        <section class="box-section background1">
+            <h2 class="box-title">Ley de ohm</h2>
+            <div class="box-container">
+                <p>
+                    La ley de Ohm llamada así en honor al físico alemán Georg Simon Ohm,
+                    que la descubrió en 1827, permite relacionar la intensidad con la fuerza
+                    electromotriz y la resistencia.Debido a la existencia de materiales que dificultan más el paso de la
+                    corriente eléctrica que otros, cuando el valor de la resistencia varía, el valor
+                    de la intensidad de corriente en amperes también varía de forma
+                    inversamente proporcional. <br> <br>
+    
+                    Tension: es la diferencia que existe entre la carga electrica que sale de la fuente y 
+                    con la que finalmente llegan al final del circuito. <br> 
+                    Resistencia: es la dificultad que opone un circuito al paso de la corriente. <br>
+                    Corriente: es la magnitud fisica que expresa la cantidad de electricidad que fluye por 
+                    un conductor en la unidad de tiempo.
+                </p>
+            </div>
+            <div class="box-container">
+                <form  class="form" name="ohm-voltage" id="ohm_voltage" >
+                    <h3 class="form-title">Calcular Voltage</h3>
+                    <div class="form-box">
+                        <label for="current1" id="current-ohm1">Ingrese la Corriente: </label>
+                        <div class="form-input">
+                            <input type="number" id="current1" required>
+                            <h4>Amp</h4>  
+                        </div>     
+                    </div>
+                    <div class="form-box">
+                        <label for="endurance1" id="endurance-ohm1">Ingrese la Resistencia: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance1" required>
+                            <h4>Ohm</h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+
+                <form  class="form" name="ohm-curret" id="ohm_current" >
+                    <h3 class="form-title">Calcular Corriente</h3>
+                    <div class="form-box">
+                        <label for="voltage1" id="voltage1-ohm1">Ingrese el Voltage: </label>
+                        <div class="form-input">
+                            <input type="number" id="voltage1" required>
+                            <h4>Volt</h4>  
+                        </div>     
+                    </div>
+                    <div class="form-box">
+                        <label for="endurance2" id="endurance-ohm2">Ingrese la Resistencia: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance2" required>
+                            <h4>Ohm</h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+
+                <form  class="form" name="ohm-voltage" id="ohm_voltage" >
+                    <h3 class="form-title">Calcular Resistencia</h3>
+                    <div class="form-box">
+                        <label for="voltage2" id="voltage2-ohm">Ingrese el Voltage: </label>
+                        <div class="form-input">
+                            <input type="number" id="voltage2" required>
+                            <h4>Ohm</h4>
+                        </div>
+                    </div>
+                    <div class="form-box">
+                        <label for="current2" id="current-ohm2">Ingrese la Corriente: </label>
+                        <div class="form-input">
+                            <input type="number" id="current2" required>
+                            <h4>Amp</h4>  
+                        </div>     
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+            </div>
+            
+            
+        </section>
+        
+    </main>
+
+
+
+<footer class="container-section">
+    <p>&#169 e3core&floriambra  </p>
+</footer>
+<script src="../scripts/calculations.js"></script>
+</body>
+</html>

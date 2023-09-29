@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/e3core&floriambra/img/logo e3core&floriambra-icon.jpg">
+    <link rel="stylesheet" href="/e3core&floriambra/style/reset.css">
+    <link rel="stylesheet" href="/e3core&floriambra/style/style1.css">
+    <title>E3core&Floriambra</title>
+</head>
+<body >
+    <!--       
+    -->
+    <header>
+        <div class="container-menu">
+            <nav class="menu">
+                <div class="menu-icons">
+                    <img src="/e3core&floriambra/img/e3core.png" alt="logo nombre e3core"> 
+                    <img src="/e3core&floriambra/img/floriambra.png" alt="logo nombre floriambra">   
+                </div>
+                <div>    
+                    <ul class="menu-list">
+                        <li><a href="../electricidad.html">Inicio</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+    </header>
+    <main>
+        <section class="box-section background1">
+            <h2 class="box-title">Voltimetro y Amperimetro</h2>
+            <div class="box-container">
+                <p>
+                    Un voltímetro es un instrumento de medición utilizado para medir la diferencia de potencial
+                    eléctrico entre dos puntos en un circuito eléctrico. En otras palabras, mide el voltaje o la
+                    tensión eléctrica. Esta diferencia de potencial se expresa en unidades de voltios (V). 
+                    Los voltímetros están diseñados para tener una alta resistencia interna para minimizar la carga 
+                    en el circuito que están midiendo.. <br> <br>
+    
+                    Un amperímetro es un instrumento de medición que se utiliza para medir la intensidad de corriente 
+                    eléctrica en un circuito. Mide la cantidad de carga eléctrica que fluye por unidad de tiempo y se
+                    expresa en amperios (A). Los amperímetros están diseñados para tener una resistencia muy baja para
+                    que no afecten significativamente la corriente que están midiendo.
+                </p>
+            </div>
+            <div class="box-container">
+                <form  class="form" name="endurance_tension" id="endurance_tension" >
+                    <h3 class="form-title">Calcular Resistor en serie segun la tension</h3>
+                    <div class="form-box">
+                        <label for="">Ingrese la tension total: </label>
+                        <div class="form-input">
+                            <input type="number" id="voltage_total1" required>
+                            <h4>Volt</h4>  
+                        </div>     
+                    </div>
+
+                    <div class="form-box">
+                        <label for="">Ingrese la tension en el mecanismo de medicion: </label>
+                        <div class="form-input">
+                            <input type="number" id="voltage_measurement1" required>
+                            <h4>Volt</h4>  
+                        </div>     
+                    </div>
+
+                    <div class="form-box">
+                        <label for="">Ingrese la Corriente sobre el mecanismo de medicion: </label>
+                        <div class="form-input">
+                            <input type="number" id="current_measurement1" required>
+                            <h4>Amp</h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+
+                <form  class="form" name="endurance_range" id="endurance_range" >
+                    <h3 class="form-title">Calcular Resistor en serie segun el factor de ampliacion</h3>
+                    <div class="form-box">
+                        <label for="">Ingrese el factor de ampliacion del rango de medicion: </label>
+                        <div class="form-input">
+                            <input type="number" id="range_apli1" required>
+                        </div>     
+                    </div>
+
+                    <div class="form-box">
+                        <div class="form-input">
+                            <input type="number" id="range_numb1" value="1" readonly required>
+                        </div>     
+                    </div>
+
+                    <div class="form-box">
+                        <label for="">Ingrese la Resistencia interna del mecanismo de medicion: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance_interna1" required>
+                            <h4>Amp</h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+
+                <form  class="form" name="factor_range1" id="factor_range1" >
+                    <h3 class="form-title">Calcular el factor de ampliacion del rango de medicion segun la tension:</h3>
+                    <div class="form-box">
+                        <label for="">Ingrese la tension total: </label>
+                        <div class="form-input">
+                            <input type="number" id="voltage_total2" required>
+                            <h4>Volt</h4>
+                        </div>     
+                    </div>
+                    <div class="form-box">
+                        <label for="">Ingrese la tension en el mecanismo de medicion </label>
+                        <div class="form-input">
+                            <input type="number" id="voltage_measurement2" required>
+                            <h4>Volt</h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+
+                <form  class="form" name="factor_range2" id="factor_range2" >
+                    <h3 class="form-title">Calcular el factor de ampliacion del rango de medicion segun la corriente:</h3>
+                    <div class="form-box">
+                        <label for="">Ingrese la corriente total: </label>
+                        <div class="form-input">
+                            <input type="number" id="current_total1" required>
+                            <h4>Amp</h4>
+                        </div>     
+                    </div>
+                    <div class="form-box">
+                        <label for="">Ingrese la corriente en el mecanismo de medicion </label>
+                        <div class="form-input">
+                            <input type="number" id="current_measurement2" required>
+                            <h4>Amp</h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+
+            </div>
+            
+            
+        </section>
+        
+    </main>
+
+
+
+<footer class="container-section">
+    <p>&#169 e3core&floriambra  </p>
+</footer>
+<script  type="module" src="/e3core&floriambra/scripts/controllers.js"></script>
+</body>
+</html>

@@ -511,7 +511,7 @@ footer{
   align-items: center;
   padding: .7em;
   font-weight: bolder;
-  font-size: var(--h3-font-size);
+  font-size: var(--h4-font-size);
 }
 
 .form-box{
@@ -553,4 +553,8 @@ footer{
   border-radius: 5px;
   border: .2px solid black;
   height: 25px;
+}
+
+.disguise{
+  display: none;
 }

@@ -49,14 +49,14 @@
                 <form  class="form" name="ohm-voltage" id="ohm_voltage" >
                     <h3 class="form-title">Calcular Voltage</h3>
                     <div class="form-box">
-                        <label for="current1" id="current-ohm1">Ingrese la Corriente: </label>
+                        <label for="" id="current-ohm1">Ingrese la Corriente: </label>
                         <div class="form-input">
                             <input type="number" id="current1" required>
                             <h4>Amp</h4>  
                         </div>     
                     </div>
                     <div class="form-box">
-                        <label for="endurance1" id="endurance-ohm1">Ingrese la Resistencia: </label>
+                        <label for="" id="endurance-ohm1">Ingrese la Resistencia: </label>
                         <div class="form-input">
                             <input type="number" id="endurance1" required>
                             <h4>Ohm</h4>
@@ -84,13 +84,13 @@
                     <input class="form-button" type="submit" value="Calcular"  >
                 </form>
 
-                <form  class="form" name="ohm-voltage" id="ohm_voltage" >
+                <form  class="form" name="ohm-endurance" id="ohm_endurance" >
                     <h3 class="form-title">Calcular Resistencia</h3>
                     <div class="form-box">
                         <label for="voltage2" id="voltage2-ohm">Ingrese el Voltage: </label>
                         <div class="form-input">
                             <input type="number" id="voltage2" required>
-                            <h4>Ohm</h4>
+                            <h4>Volt</h4>
                         </div>
                     </div>
                     <div class="form-box">
@@ -100,7 +100,7 @@
                             <h4>Amp</h4>  
                         </div>     
                     </div>
-                    <input class="form-button" type="submit" value="Calcular"  >
+                    <input class="form-button" type="submit" value="Calcular">
                 </form>
             </div>
             
@@ -114,6 +114,6 @@
 <footer class="container-section">
     <p>&#169 e3core&floriambra  </p>
 </footer>
-<script src="../scripts/calculations.js"></script>
+<script  type="module" src="/e3core&floriambra/scripts/controllers.js"></script>
 </body>
 </html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/e3core&floriambra/img/logo e3core&floriambra-icon.jpg">
+    <link rel="stylesheet" href="/e3core&floriambra/style/reset.css">
+    <link rel="stylesheet" href="/e3core&floriambra/style/style1.css">
+    <title>E3core&Floriambra</title>
+</head>
+<body >
+    <!--       
+    -->
+    <header>
+        <div class="container-menu">
+            <nav class="menu">
+                <div class="menu-icons">
+                    <img src="/e3core&floriambra/img/e3core.png" alt="logo nombre e3core"> 
+                    <img src="/e3core&floriambra/img/floriambra.png" alt="logo nombre floriambra">   
+                </div>
+                <div>    
+                    <ul class="menu-list">
+                        <li><a href="../electricidad.html">Inicio</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+    </header>
+    <main>
+        <section class="box-section background1">
+            <h2 class="box-title">Conductancia electrica<h2>
+            <div class="box-container">
+                <p>
+                    Es la determinacion de la rapidez con la que la corriente 
+                    puede fluir dentro del componente. <br>
+                    
+                    Longitud del conductor: es la medida física de la distancia que existe
+                    entre sus extremos o terminales. <br>
+                    
+                    Seccion del conductor: es la medida transversal de su área, es decir,
+                    es la superficie que queda expuesta cuando se corta un conductor en un plano
+                    perpendicular a su eje longitudinal. <br>
+                    
+                    Conductibilidad: es una medida de la facilidad con que un material puede ser
+                    conducido por la corriente eléctrica, y se expresa en términos de su 
+                    resistencia eléctrica. La conductibilidad es el inverso de la resistividad,
+                    y se expresa en siemens por metro al cuadrado (S/m²).  <br>
+                    
+                    Conductividad: es la medida de la capacidad de un material para conducir la 
+                    corriente eléctrica, y se expresa en siemens por metro (S/m)" <br>
+                    
+                    Resistividad: es una propiedad intrínseca de los materiales que indica la 
+                    capacidad que tienen para resistir el flujo de corriente eléctrica. 
+                    Se expresa en ohmios por metro (Ω/m) y depende de las características físicas 
+                    y químicas del material, como su composición, estructura, temperatura, presión, etc. <br>
+                    
+                    Resistencia especifica: es una medida de la resistividad de un material, 
+                    y se define como la resistencia eléctrica que presenta un material de 
+                    un metro de longitud y una sección transversal de un metro cuadrado. 
+                    Se expresa en ohmios-metros (Ω·m). <br>
+            </div>
+            <div class="box-container">
+                <form  class="form" name="conductance" id="conductance" >
+                    <h3 class="form-title">Calcular Conductancia</h3>
+                    <div class="form-box">
+                        <div class="form-input">
+                            <input type="number" id="conductance_1" value="1" readonly required >  
+                        </div>     
+                    </div>
+                    <div class="form-box">
+                        <label for="endurance_conductance" >Ingrese la Resistencia: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance_conductance" required>
+                            <h4>Ohm</h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+
+                <form  class="form" name="endurance_conductor" id="endurance_cond" >
+                    <h3 class="form-title">Calcular resistencia teniendo la conductividad electrica</h3>
+                    <div class="form-box">
+                        <label for="long-cond" id="long-cond">Ingrese longitud del conductor: </label>
+                        <div class="form-input">
+                            <input type="number" id="long-cond1" required>
+                            <h4>Volt</h4>  
+                        </div>     
+                    </div>
+                    <div class="form-box">
+                        <label for="conduc_elect" id="conduc_elect">Ingrese la conductividad electrica: </label>
+                        <div class="form-input">
+                            <input type="number" id="conduc_elect1" required>
+                            <h4>Ohm</h4>
+                        </div>
+                    </div>
+                    <div class="form-box">
+                        <label for="area_conduc" id="area_conduc">Ingrese el area del conductor: </label>
+                        <div class="form-input">
+                            <input type="number" id="area_conduc1" required>
+                            <h4>Ohm</h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+
+                <form  class="form" name="endurance_sp" id="endurance_sp" >
+                    <h3 class="form-title">Calcular resistencia teniendo la resistencia especifica</h3>
+                    <div class="form-box">
+                        <label for="endurance_specify" id="endurance_specify">Ingrese la resistencia especifica: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance_specify1" required>
+                            <h4>Ohm</h4>
+                        </div>
+                    </div>
+                    <div class="form-box">
+                        <label for="long_conduct" id="long_conduct">Ingrese la longitud del conductor: </label>
+                        <div class="form-input">
+                            <input type="number" id="long_conduct1" required>
+                            <h4>Amp</h4>  
+                        </div>     
+                    </div>
+                    <div class="form-box">
+                        <label for="are_conduct" id="are_conduct">Ingrese el area del conductor: </label>
+                        <div class="form-input">
+                            <input type="number" id="are_conduct1" required>
+                            <h4>Amp</h4>  
+                        </div>     
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular">
+                </form>
+                
+                <form  class="form" name="conductibilidad" id="conductibilidad" >
+                    <h3 class="form-title">Calcular Conductibilidad</h3>
+                    <div class="form-box">
+                        <div class="form-input">
+                            <input type="number" id="conductibilidad_1" value="1" required >  
+                        </div>     
+                    </div>
+                    <div class="form-box">
+                        <label for="" >Ingrese la Resistencia especifica: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance_conductibilidad" required>
+                            <h4></h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+            </div>
+            
+            
+        </section>
+        
+    </main>
+
+
+
+<footer class="container-section">
+    <p>&#169 e3core&floriambra  </p>
+</footer>
+<script type="module" src="/e3core&floriambra/scripts/controllers.js"></script>
+</body>
+</html>

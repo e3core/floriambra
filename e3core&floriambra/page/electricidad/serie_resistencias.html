@@ -1,0 +1,80 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/e3core&floriambra/img/logo e3core&floriambra-icon.jpg">
+    <link rel="stylesheet" href="/e3core&floriambra/style/reset.css">
+    <link rel="stylesheet" href="/e3core&floriambra/style/style1.css">
+    <title>E3core&Floriambra</title>
+</head>
+<body >
+    <!--       
+    -->
+    <header>
+        <div class="container-menu">
+            <nav class="menu">
+                <div class="menu-icons">
+                    <img src="/e3core&floriambra/img/e3core.png" alt="logo nombre e3core"> 
+                    <img src="/e3core&floriambra/img/floriambra.png" alt="logo nombre floriambra">   
+                </div>
+                <div>    
+                    <ul class="menu-list">
+                        <li><a href="../electricidad.html">Inicio</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+    </header>
+    <main>
+        <section class="box-section background1">
+            <h2 class="box-title">Resistencias en serie y paralelo</h2>
+            <div class="box-container">
+                <p>
+                    Resistencias en serie: la caracteristica de un circuito con resistencias en serie es que la corriente 
+                    tiene que pasar por cada una de ellas de forma secuencial. Las tensiones y las resistencias correspondientes
+                    son directamente proporcional y sobre cada resistor fluye la misma corriente, ya con esto se puede deducir las
+                    siguientes formulas R= R1+R2+R3 , U= U1+U2+U3 , I= I1=I2=I3. <br><br>
+                    Resistencias en paralelo: cuando las resistencias comparten sus extremos la corriente se divide en cada una de 
+                    ellas.La resistencia total de un circuito paralelo es igual al inverso de las resistencias individuales por eso las
+                    corrientes y las resistencias correspondientes son indirectamente  proporcional y en cada resistor hay la misma 
+                    tension, gracias esta informacion se puede decir que: 1/R =1/R1+1/R2+1/R3 , U =U1=U2=U3, I=I1+I2+I3  
+                    </p>
+                    
+            </div>
+            <div class="box-container">
+                
+                <form action="" id="endurance_series" class="form">
+                    <h3 class="form-title">Resistencias en serie </h3>
+                    <div class="form-box" id="container_series1">
+                        <label for="">Ingrese La cantidad de resistencias</label>
+                        <input type="number" id="endurance_amount1" class="form-input">
+                        <input type="submit" value="ok" id="enduranceamount_submit1" class="form-button">
+                    </div>
+                    
+                </form>
+                
+                <form action="" id="endurance_parallel" class="form">
+                    <h3 class="form-title">Resistencias en paralelo</h3>
+                    <div class="form-box" id="container_parallel1">
+                        <label for="">Ingrese La cantidad de resistencias</label>
+                        <input type="number" id="endurance_amount2" class="form-input">
+                        <input type="submit" value="ok" id="enduranceamount_submit2" class="form-button">
+                    </div>
+                    
+                </form>
+            </div>
+            
+            
+        </section>
+        
+    </main>
+
+
+
+<footer class="container-section">
+    <p>&#169 e3core&floriambra  </p>
+</footer>
+<script  type="module" src="/e3core&floriambra/scripts/controllers.js"></script>
+</body>
+</html>

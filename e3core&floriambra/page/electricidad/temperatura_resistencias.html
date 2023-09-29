@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/e3core&floriambra/img/logo e3core&floriambra-icon.jpg">
+    <link rel="stylesheet" href="/e3core&floriambra/style/reset.css">
+    <link rel="stylesheet" href="/e3core&floriambra/style/style1.css">
+    <title>E3core&Floriambra</title>
+</head>
+<body >
+    <!--       
+    -->
+    <header>
+        <div class="container-menu">
+            <nav class="menu">
+                <div class="menu-icons">
+                    <img src="/e3core&floriambra/img/e3core.png" alt="logo nombre e3core"> 
+                    <img src="/e3core&floriambra/img/floriambra.png" alt="logo nombre floriambra">   
+                </div>
+                <div>    
+                    <ul class="menu-list">
+                        <li><a href="../electricidad.html">Inicio</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+    </header>
+    <main>
+        <section class="box-section background1">
+            <h2 class="box-title">Temperatura en las resietencias</h2>
+            <div class="box-container">
+                <p>
+                    Los materiales conductores de electricidad experimentan cambios 
+                    en su resistencia con la variación de la temperatura. Los dos tipos principales son: <br>
+                    Materiales con Coeficiente de Temperatura Positivo (PTC): En estos materiales, la resistencia 
+                    aumenta con el aumento de la temperatura. Por ejemplo, la mayoría de los metales tienen un 
+                    coeficiente de temperatura positivo.<br>
+                    Materiales con Coeficiente de Temperatura Negativo (NTC): En estos materiales, la resistencia
+                    disminuye con el aumento de la temperatura. Los semiconductores y algunas cerámicas son ejemplos 
+                    de materiales NTC. <br>
+                    
+                </p>
+            </div>
+            <div class="box-container">
+                <form  class="form" id="endurance_variation" >
+                    <h3 class="form-title">Calcular la variacion de la resistencia</h3>
+                    <div class="form-box">
+                        <label for="">Ingrese el coeficiente de temperatura: </label>
+                        <div class="form-input">
+                            <input type="number" id="temp_coefficient1" required>
+                            <h4>α</h4>  
+                        </div>     
+                    </div>
+
+                    <div class="form-box">
+                        <label for="">Ingrese la variacion de temperatura: </label>
+                        <div class="form-input">
+                            <input type="number" id="variation_temp1" required>
+                            <h4>ΔT</h4>  
+                        </div>     
+                    </div>
+
+                    <div class="form-box">
+                        <label for="">Ingrese la recistencia en frio: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance_ice1" required>
+                            <h4>Ω</h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+
+                <form  class="form" id="endurance_hot" >
+                    <h3 class="form-title">Calcular La resistencia en caliente</h3>
+                    <div class="form-box">
+                        <label for="">Ingrese la resistencia en frio: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance_ice2" required>
+                            <h4>Ω</h4>
+                        </div> 
+                            
+                    </div>
+                    <div class="form-box">
+                        <label for="">Ingrese la variacion de la resitencia: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance_variation1" required>
+                            <h4>Ω</h4>  
+                        </div> 
+                          
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+
+                <form  class="form" id="temperature_variation" >
+                    <h3 class="form-title">Calcular la variacion de temperatura</h3>
+                    <div class="form-box">
+                        <label for="">Ingrese la resistencia en caliente: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance_hot1" required>
+                            <h4>Ω</h4>
+                        </div>     
+                    </div>
+                    <div class="form-box">
+                        <label for="">Ingrese la resistencia en frio: </label>
+                        <div class="form-input">
+                            <input type="number" id="endurance_ice3" required>
+                            <h4>Ω</h4>
+                        </div>
+                    </div>
+                    <div class="form-box">
+                        <label for="">Ingrese el coeficiente de temperatura: </label>
+                        <div class="form-input">
+                            <input type="number" id="temp_coefficient2" required>
+                            <h4>/°C</h4>
+                        </div>
+                    </div>
+                    <input class="form-button" type="submit" value="Calcular"  >
+                </form>
+            </div>
+            
+            
+        </section>
+        
+    </main>
+
+
+
+<footer class="container-section">
+    <p>&#169 e3core&floriambra  </p>
+</footer>
+<script  type="module" src="/e3core&floriambra/scripts/controllers.js"></script>
+</body>
+</html>
